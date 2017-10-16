@@ -37,6 +37,8 @@
             height: 100%;
             width: 100%;
 
+            background-color: #B2B2B2;
+
         }
         #top{
             height: 10%;
@@ -107,6 +109,8 @@
             flex-direction: row;
 
             font-size: 1.8vh;
+            height: 100%;
+            background-color: goldenrod;
         }
         #left{
             /* previous syntax */
@@ -120,8 +124,8 @@
             -moz-flex: 2;
             -ms-flex: 2;
             flex: 2;
-            /*background-color: #96caee;*/
-            margin: 1%;
+            background-color: #B2B2B2;
+            padding: 1%;
 
             /* previous syntax */
             display: -webkit-box;
@@ -157,7 +161,9 @@
             -moz-flex: 3;
             -ms-flex: 3;
             flex: 3;
-            margin: 1%;
+            background-color: #B2B2B2;
+            padding: 1%;
+            margin-left: 3px;
 
 
             /* previous syntax */
@@ -212,6 +218,7 @@
 
             font-size: 3vh;
             text-align: center;
+            color: white;
         }
         #author{
 
@@ -229,6 +236,7 @@
             
             padding: 1%;
             font-size: 2vh;
+            color: white;
         }
         #introduction, #questions, #methods{
 
@@ -336,6 +344,9 @@
         .title{
             font-size: 2.5vh;
             margin-bottom: 1%;
+            padding-left: 2%;
+            background-color: black;
+            color: white;
         }
         .case{
 
@@ -357,9 +368,6 @@
             align: center;
             overflow: hidden;
         }
-        .imgbox{
-            width: 100%;
-        }
         P, ul{
             margin-top: 0%;
             margin-bottom: 1%;
@@ -369,6 +377,11 @@
         }
         .showimg{
             width: 100%;
+            height: 50%;
+        }
+        .quote{
+            background-color: #c7c7c7;
+            padding: 2%;
         }
     </style>
 </head>
@@ -435,29 +448,30 @@
                     <p>Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. </p>
                     <b>Case study</b>
                     <p>EasyJet is a European airline that uses its cost advantage and favorable network positions in strong markets to deliver low fares and operational efficiency on point-to-point routes, while offering friendly service to customers. The company's sustainable business model aims to make travel easy and affordable, while driving growth and returns for shareholders.</p>
+                    <div class="quote">
                     <p><em>" Through the use of IBM Cognos Disclosure Management, we have made the whole year-end reporting process much smoother. "</em></p>
                     <p align="right">Gail Butler, Head of Group Reporting, easyJet</p>
-                    <p>Solution</p>
+                    </div>
+                    <b>Solution</b>
                     <p>easyJet has upgraded to a cloud-based disclosure management platform from IBM, which integrates data from ERP and finance systems directly into the company's external reporting templates.</p>
                     <p align="right">(Source: IBM)</p>
                 </div>
                 <img class="timeline" src="http://smileit.at/blog/wp-content/uploads/2016/06/Cloud-timeline.png">
             </div>
             <div id="right-right">
-                <div style="background-color: white; padding: 5%">
+                <div style="background-color: white; height: 36%; padding: 5%">
                     <div class="showpic" style="display: block"><img class="showimg" src="images/2.svg"></div>
                     <div class="showpic"><img class="showimg" src="images/3.jpg"></div>
                     <div class="showpic"><img class="showimg" src="images/4.jpg"></div>
                     <div class="showpic"><img class="showimg" src="images/5.jpg"></div>
                 </div>
                 <br>
-                <div class="case" style="bottom: 0%">
+                <div class="case" style="margin-top: 3%">
                     <div class="title">Containers</div>
                     <b>Pokémon powered by containers</b>
                     <p>Beyond being a global phenomenon, Pokémon GO is one of the most exciting examples of container-based development in the wild. The application logic for the game runs on Google Container Engine (GKE) powered by the open source Kubernetes project. Niantic chose GKE for its ability to orchestrate their container cluster at planetary-scale, freeing its team to focus on deploying live changes for their players. In this way, Niantic used Google Cloud to turn Pokémon GO into a service for millions of players, continuously adapting and improving.</p>
                 </div>
-               
-                <a href="/references" target="_blank">References</a>
+                <a href="/references" target="_blank" style="color: #6599ff">References</a>
             </div>
         </div>
     </div>
@@ -478,7 +492,7 @@
         }
         slides[slideIndex-1].style.display='block';
         slideIndex++;
-        setTimeout(showSlides,3000);
+        setTimeout(showSlides,500);
 
     }</script>
     </body>
