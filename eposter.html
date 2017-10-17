@@ -247,6 +247,10 @@
             overflow: scroll;
             text-overflow: ellipsis;
         }
+
+        #video{
+            float: right;
+        }
         #questions{
 
             /* previous syntax */
@@ -396,27 +400,17 @@
     </div>
     <div id="main">
         <div id="left">
+            <div class="title">Introduction</div>
             <div id="introduction">
-                <div class="title">Introduction</div>
+                <div id="video">
+                    <iframe width=100% src="https://www.youtube.com/embed/EnJ7qX9fkcU?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
                 <p>Cloud computing has been embraced by many enterprises as one of the most emerging IT technology which is believed to have the potential to transform the the way IT products and services are designed and distributed (2010, Armbrust, Michael, et al.) and reduces the upfront costs for IT construction in enterprises (2011, Marston, Sean, et al). Meanwhile, the industry has never stop exploring to improve the performance of cloud computing. A new technology called Container has been introduced as a more efficient application deployment paradigm compared to traditional hypervisor-based deployment.</p>
             </div>
+            <div class="title">Research Questions</div>
             <div id="questions">
-                <div class="title">Research Questions</div>
+                <div class="para">
                 <div>(Click on each question to expand more detail)</div>
-<!--                <ul>
-                    <li>
-                        <p>What are the differences between container and virtual machines?</p>
-                        <p>The first step of this research is to compare these two different type of virtualization technologies in a technical perspective.</p>
-                    </li>
-                    <li>
-                        <p>At what extent can container help companies reducing IT cost?</p>
-                        <p>Cost saving is the most important motivation for enterprises to adopt new technologies. Since container is believed to be more efficient, it is important to understand how could it reduce cost when the clients have already moved to cloud and how much more could it save for them.</p>
-                    </li>
-                    <li>
-                        <p>Does container technology as secure as existing solution?</p>
-                        <p>Security is another major concern when CIOs choosing technology types. Both the constant working time and resistance to unauthorised access should be considered in technical evaluation.</p>
-                    </li>
-                </ul>-->
 
                 <details>
                     <summary>What are the differences between container and virtual machines?</summary>
@@ -430,10 +424,11 @@
                     <summary>Does container technology as secure as existing solution?</summary>
                     <p>Security is another major concern when CIOs choosing technology types. Both the constant working time and resistance to unauthorised access should be considered in technical evaluation.</p>
                 </details>
+                </div>
             </div>
+            <div class="title">Research Methods</div>
             <div id="methods">
-                <div class="title">Research Methods</div>
-                <div>
+                <div class="para">
                     <b>Literature review: </b>All research should be conducted with awareness of existing knowledge in relevant subject areas(2004, Rowley and Slack). A literature review could help researcher to figure out areas where researches exist and uncover areas where research(2002, Webster and Watson). In this research, articles relevant to cloud computing, virtualization and container would be reviewed to learn advantages and disadvantages of these technologies and challenges in adopting them.
                     <br>
                     <b>Case study: </b>A case study is a research method involving multiple data collection methods to gather information from natural individuals, legal entities or public database in a non-experimental context(1987, Benbasat, Goldstein and Mead). For this research, researcher would collect data from both vendors and clients. Representative from a cloud compute provider would be review to learn as many container technology application cases as possible. CIOs and employees from several clients in those cases would also been interviewed to understand the benefits and risks in perspective of clients and users.
@@ -442,8 +437,8 @@
         </div>
         <div id="right">
             <div id="right-left">
+                <div class="title">Cloud computing</div>
                 <div class="case">
-                    <div class="title">Cloud computing</div>
                     <b>The NIST Definition of Cloud Computing</b>
                     <p>Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. </p>
                     <b>Case study</b>
@@ -492,7 +487,7 @@
         }
         slides[slideIndex-1].style.display='block';
         slideIndex++;
-        setTimeout(showSlides,500);
+        setTimeout(showSlides,1000);
 
     }</script>
     </body>
